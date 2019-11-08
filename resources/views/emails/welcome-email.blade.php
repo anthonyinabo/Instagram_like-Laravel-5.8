@@ -1,9 +1,7 @@
 @component('mail::message')
-# Introduction
 
-Bienvenu à toi mon frère
+<h2>Bienvenu sur {{ config('app.name') }}</h2>
 
-
-Thanks, <br>
+Merci encore de vous être inscrit(e).
 {{ config('app.name') }}
 @endcomponent

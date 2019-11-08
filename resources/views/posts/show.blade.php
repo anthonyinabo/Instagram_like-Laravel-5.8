@@ -15,9 +15,7 @@
       <hr style="width: 100%; color: black; height: 1px;" />
       <img src="{{$post->user->profile->ProfilePhoto()}}" class="rounded-circle float-left" style="height: 40px;">
       <p class="card-text ml-5">{{$post->caption}}</p>
-      	 <div class="pt-5">
-          <p class="card-text"><span class="text-muted">Comme je vous le disais le systeme de "like" et de commentaire est manquant car le site est encore en cours de developpement.</span></p>	
-        </div>
+      	
     </div>
    </div>
   </div>

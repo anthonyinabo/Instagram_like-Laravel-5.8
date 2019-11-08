@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -68,7 +69,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/') }}">Mon compte</a>
+                        <a href="/flux">Flux d'actualité</a>
                     @else
                         <a href="{{ route('login') }}">se connecter</a>
 
@@ -81,11 +82,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-            {{ config('app.name', 'Laravel') }}
+<i class="fa fa-instagram" style="font-size:70px;color:black"></i>&nbsp;
+{{ config('app.name', 'Laravel') }}
                 </div>
             </div>
         </div>
-
-        
     </body>
 </html>

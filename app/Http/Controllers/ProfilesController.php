@@ -63,14 +63,14 @@ class ProfilesController extends Controller
     	$data = request()->validate([
     		'title' => 'required',
     		'description' => 'required',
-    		'photo' => '',
+    		'photo'
     	]);
 
     	if (request('photo')) {	
 
 		$photoPath = request('photo')->store('photos', 'public');
 
-        $image = Image::make(public_path("storage/{$photoPath}"))->fit(1000, 1000);
+        $image = Image::make(public_path("storage/{$photoPath}"))->fit(1200, 1200);
         $image->save();
 
 		$photoArray = ['photo' => $photoPath];

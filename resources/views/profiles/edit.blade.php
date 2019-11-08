@@ -26,7 +26,7 @@
  <label for="title" class="pl-5 col-form-label">Bio</label>
 
   <div class="col-4">
-     <input id="title" type="title" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" required autocomplete="title" autofocus>
+     <input id="title" type="title" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" autocomplete="title" autofocus>
 
     @error('title')
         <span class="invalid-feedback" role="alert">
@@ -40,7 +40,7 @@
  <label for="description" class="pl-4 col-form-label">URL</label>
 
   <div class="col-4">
-     <input id="description" type="description" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
+     <input id="description" type="description" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}"  autocomplete="description" autofocus>
 
     @error('description')
         <span class="invalid-feedback" role="alert">
