@@ -2,8 +2,8 @@
 
 namespace App;
 
-use App\Profile;
 use App\Post;
+use App\Profile;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;

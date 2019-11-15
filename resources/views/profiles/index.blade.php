@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+  
 <img src="{{$user->profile->Profilephoto()}}" class="rounded-circle float-left" style="height: 200px; margin-left: 2cm;">
 
 <div class="row">
@@ -28,13 +29,13 @@
   <a href="https://{{$user->profile->description}}">{{$user->profile->description}}</a>
 </div>
 
-@can('update', $user->profile)
   <div class="container-fluid mt-5">
     <div class="mx-auto" style="width: 200px;">
+@can('update', $user->profile)
       <a href="/p/create" class="btn btn-secondary">poster <i class="fa fa-camera"></i></a>
+@endcan
     </div>
   </div>
-@endcan
 
 <div class="row pt-5">
 @foreach($user->posts as $post)

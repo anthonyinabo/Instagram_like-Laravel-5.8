@@ -76,7 +76,7 @@ class ProfilesController extends Controller
 		$photoArray = ['photo' => $photoPath];
 		}
 
-			 auth()->user()->profile->update(array_merge(
+			 auth()->user()->profile()->update(array_merge(
     		 	$data,
     		 	$photoArray ?? [],
     	));

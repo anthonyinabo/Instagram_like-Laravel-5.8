@@ -8,6 +8,7 @@ class SearchController extends Controller
 {
     public function store()
     {
+    	
     	$users = Request([
     		'search',
     	]);

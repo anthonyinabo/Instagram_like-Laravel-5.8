@@ -1,9 +1,5 @@
 <?php
 
-
-Auth::routes();
-Route::get('/index', 'HomeController@index')->name('home');
-
 Route::get('/', function () {
 	return view('/welcome');
 });
@@ -20,5 +16,6 @@ Route::get('/p/create', 'PostsController@create');
 Route::post('/p', 'PostsController@store');
 Route::get('/p/{post}', 'PostsController@show'); 
 
-
+Auth::routes();
+Route::get('/index', 'HomeController@index')->name('home');
 
